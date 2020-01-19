@@ -1,5 +1,5 @@
 //
-//  ContactStorageManager.swift
+//  StorageManager.swift
 //  CoreData-ContactList
 //
 //  Created by Vincent Grossier on 19/01/2020.
@@ -9,9 +9,9 @@
 import UIKit
 import CoreData
 
-class ContactStorageManager {
+class StorageManager {
     
-    private let persistentContainer: NSPersistentContainer
+    internal let persistentContainer: NSPersistentContainer
     
     lazy var backgroundContext: NSManagedObjectContext = {
         return self.persistentContainer.newBackgroundContext()
